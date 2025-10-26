@@ -89,25 +89,30 @@
 .order-list-item-content{
     width: 100%;
     padding: 8px 12px;
-    border: 1px solid #E5E5E5;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
 }
+
+.order-list-item-content-openlist{
+    width: 100%;
+    padding: 8px 12px;
+}
+
+// 圓角轉換
+.trans-radious {
+    border: 1px solid #E5E5E5;
+    border-top: none;
+    border-bottom-left-radius: 12px;border-bottom-right-radius: 12px;
+}
+
+.trans-radious .collapse.show {
+    border-bottom-left-radius: 0;border-bottom-right-radius: 0;
+}
+
+
 
 .order-list-item-content-small{
     width: 100%;
     padding: 12px 12px;
-    border-left: 1px solid #E5E5E5;
-    border-right: 1px solid #E5E5E5;
-}
-
-.order-list-item-content-small-end{
-    width: 100%;
-    padding: 12px 12px;
-    border: 1px solid #E5E5E5;
-    border-top: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border:none;
 }
 
 .order-items-name{
@@ -168,17 +173,31 @@
 }
 
 .order-items-unfolded-title{
-    background-color: #F4F5F7;
     margin: 6px 0px;
 }
 
 
 // 總額
 .order-list-total-pay{
+    max-width: 856px;
     border-top: 1px solid #E5E5E5;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: end;
 }
 
+.order-list-total-item{
+    width: 100%;
+    padding: 8px;
+    text-align: right;
+}
 
+.order-list-total-item-num{
+    width: 306px;
+    padding: 8px;
+    text-align: right;
+}
 
 
 // 客製文字、排版
