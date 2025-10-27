@@ -1,0 +1,380 @@
+<div class="container">
+  <!-- 導覽列 / 結帳資訊 -->
+  <section class="pt-30 pb-30">
+    <div class="billing-infor d-flex align-items-center mb-16">
+      <p class="Body2-md text-text-grey mt-2 mb-2">首頁</p>
+      <img src="/assets/images/icon/arrow_right(grey).svg" alt="next-page" class="text-text-grey ms-4 me-4">
+      <p class="Body2-md text-text-grey mt-2 mb-2">探索料理</p>
+      <img src="/assets/images/icon/arrow_right(grey).svg" alt="next-page" class="text-text-grey ms-4 me-4">
+      <p class="h-md-6 text-primary mb-0">結帳資訊</p>
+    </div>
+
+    <h1 class="h-md-2 text-center">結帳資訊</h1>
+  </section>
+
+      <!-- 收件人資訊 -->
+      <section class="billing-user-infor">
+        <div class="row justify-content-between">
+          <div class="col-2">
+            <p class="h-md-5">收件人資訊</p>
+            <button class="btn btn-mid mb-16" type="button">同會員資料</button>
+          </div>
+        
+          <div class="col-10"></div>
+
+          <div class="col-1"></div>
+
+          <div class="col-11">
+            <div class="d-flex">
+              <div class="billing-user-infor-title me-20">
+                <div class="pt-3 pb-3">
+                  <p class="fs-6 mb-0">姓名</p>
+                </div>
+                <div class="pt-3 pb-3">
+                  <p class="fs-6 mb-0">聯絡電話</p>
+                </div>
+                <div class="pt-3 pb-3">
+                  <p class="fs-6 mb-0">Email</p>
+                </div>
+                <div class="pt-3 pb-3">
+                  <p class="fs-6 mb-0">收件地址</p>
+                </div>
+                <div class="pt-3 pb-3">
+                  <p class="fs-6 mb-0">配送時段</p>
+                </div>
+                <div class="pt-3 pb-3">
+                  <p class="fs-6 mb-1">有無管理室</p>
+                </div>
+              </div>
+
+              <div class="billing-user-infor-input">
+                <!-- 姓名 -->
+                <div class="d-flex justify-content-between">
+                  <div class="billing-user-first-name mb-10">
+                    <input class="form-control" type="text" placeholder="姓氏" aria-label="default input example">
+                  </div>
+
+                  <div class="billing-user-last-name mb-10">
+                    <input class="form-control" type="text" placeholder="名字" aria-label="default input example">
+                  </div>
+                </div>
+
+                <!-- 聯絡電話 -->
+                <div class="receiving-address mb-10">
+                  <input class="form-control" type="tel" placeholder="請輸入聯絡電話" aria-label="default input example">
+                </div>
+                
+                <!-- E-mail -->
+                <div class="user-e-mail d-flex align-items-center mb-10">
+                  <label for="user-e-mail" class="form-label mb-0"> 
+                  </label>
+                  <input type="email" class="form-control" id="user-e-mail" placeholder="ex: 123456@gmail.com">
+                </div>
+
+                <!-- 收件地址 -->
+                <div class="receiving-address mb-10">
+                  <input class="form-control" type="text" placeholder="請輸入收件地址" aria-label="default input example">
+                </div>
+
+                <!-- 配送時段 -->
+                <div class="delivery-time mb-10">
+                  <select class="form-select delivery-time-select" aria-label="Default select example">
+                    <option selected>（請選擇配送時段）</option>
+                    <option value="morning">早上：9:00 ～ 12:00</option>
+                    <option value="afternoon">下午：13:00 ～ 17:00</option>
+                    <option value="evening">晚上：18:00 ～ 20:00</option>
+                    <option value="no-limit">不限配送時段</option>
+                  </select>
+                </div>
+
+                <!-- 有無管理室 -->
+                <div class="security-office d-flex align-items-center pt-3 pb-3">
+                  <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="security-office" id="yes-security-office" checked>
+                    <label class="form-check-label Body2-md" for="yes-security-office">
+                      有
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="security-office" id="no-security-office" checked>
+                    <label class="form-check-label Body2-md" for="no-security-office">
+                      無
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 付款資訊 -->
+      <section class="billing-payment-infor">
+        <div class="row justify-content-between">
+          <div class="col-2">
+            <p class="h-md-5 mb-16">付款資訊</p>
+            <div class="">
+              <p class="fs-6 ms-16 mb-16">付款方式</p>
+            </div>
+          </div>
+        
+          <div class="col-10"></div>
+
+            <!-- 信用卡一次付清 -->
+          <div class="col-1"></div>
+
+          <div class="col-11">
+            <div class="form-check mb-8">
+              <input class="form-check-input" type="radio" name="PaymentRadio" id="one-time-payment-credit">
+              <label class="form-check-label Body2-md" for="one-time-payment-credit">
+                信用卡一次付清
+              </label>
+
+
+              <div class="card-payment-section one-time-payment-section">
+                <div class="credit-card-option">
+                  <input type="radio" name="credit-card" id="card-1" checked>
+                  <label for="card-1" class="credit-card-label mt-8">
+                    <img src="/assets/images/icon/credit-card.svg" alt="Visa" class="ms-10 me-20">
+                    <div class="credit-card-info">
+                      <div class="credit-card-name">中國信託銀行</div>
+                      <div class="credit-card-number">****_****_**** 3333</div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="credit-card-option">
+                  <input type="radio" name="credit-card" id="card-2">
+                  <label for="card-2" class="credit-card-label">
+                    <img src="/assets/images/icon/credit-card.svg" alt="JCB" class="ms-10 me-20">
+                    <div class="credit-card-info">
+                      <div class="credit-card-name">台北富邦銀行</div>
+                      <div class="credit-card-number">****_****_**** 1111</div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="credit-card-option">
+                  <input type="radio" name="credit-card" id="card-3">
+                  <label for="card-3" class="credit-card-label">
+                    <img src="/assets/images/icon/credit-card.svg" alt="Visa" class="ms-10 me-20">
+                    <div class="credit-card-info">
+                      <div class="credit-card-name">國泰世華銀行</div>
+                      <div class="credit-card-number">****_****_**** 2222</div>
+                    </div>
+                  </label>
+                </div>
+
+                <button class="add-credit-card-btn credit-card-label mb-8">
+                  <img src="/assets/images/icon/plus-circle(blue).svg" alt="新增">
+                  新增其他信用卡
+                </button>
+
+                <!-- 安全碼 -->
+                <label for="mobile-carrier-infor" class="form-label">安全碼</label>
+                <input type="text" class="mobile-carrier-input form-control mb-20" id="mobile-carrier-infor" placeholder="CVC">
+              </div>          
+            </div>
+
+            <!-- 信用卡分期付款 -->
+            <div class="form-check mb-8">
+              <input class="form-check-input" type="radio" name="PaymentRadio" id="revolving-payment" checked>
+              <label class="form-check-label Body2-md" for="revolving-payment">
+                信用卡分期付款
+              </label>
+
+              <div class="card-payment-section revolving-payment-section">
+                <div class="credit-card-option">
+                  <input type="radio" name="credit-card" id="revolving-card-1" checked>
+                  <label for="revolving-card-1" class="credit-card-label mt-8">
+                    <img src="/assets/images/icon/credit-card.svg" alt="Visa" class="ms-10 me-20">
+                    <div class="credit-card-info">
+                      <div class="credit-card-name">中國信託銀行</div>
+                      <div class="credit-card-number">****_****_**** 3333</div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="credit-card-option">
+                  <input type="radio" name="credit-card" id="revolving-card-2">
+                  <label for="revolving-card-2" class="credit-card-label">
+                    <img src="/assets/images/icon/credit-card.svg" alt="JCB" class="ms-10 me-20">
+                    <div class="credit-card-info">
+                      <div class="credit-card-name">台北富邦銀行</div>
+                      <div class="credit-card-number">****_****_**** 1111</div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="credit-card-option">
+                  <input type="radio" name="credit-card" id="revolving-card-3">
+                  <label for="revolving-card-3" class="credit-card-label">
+                    <img src="/assets/images/icon/credit-card.svg" alt="Visa" class="ms-10 me-20">
+                    <div class="credit-card-info">
+                      <div class="credit-card-name">國泰世華銀行</div>
+                      <div class="credit-card-number">****_****_**** 2222</div>
+                    </div>
+                  </label>
+                </div>
+
+                <button class="add-credit-card-btn credit-card-label mb-8">
+                  <img src="/assets/images/icon/plus-circle(blue).svg" alt="新增">
+                  新增其他信用卡
+                </button>
+
+                <!-- 安全碼 -->
+                <label for="mobile-carrier-infor" class="form-label">安全碼</label>
+                <input type="text" class="mobile-carrier-input form-control mb-8" id="mobile-carrier-infor" placeholder="CVC">
+
+                <!-- 分期 -->
+                <div class="revolving-payment-time d-flex mb-20">
+                  <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="revolving-payment-time" id="revolving-payment-time-6" checked>
+                    <label class="form-check-label Body2-md" for="revolving-payment-time-6">
+                      6期
+                    </label>
+                  </div>
+                  
+                  <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="revolving-payment-time" id="revolving-payment-time-9" checked>
+                    <label class="form-check-label Body2-md" for="revolving-payment-time-9">
+                      9期
+                    </label>
+                  </div>
+
+                  <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="revolving-payment-time" id="revolving-payment-time-12" checked>
+                    <label class="form-check-label Body2-md" for="revolving-payment-time-12">
+                      12期
+                    </label>
+                  </div>
+
+                  <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="revolving-payment-time" id="revolving-payment-time-24" checked>
+                    <label class="form-check-label Body2-md" for="revolving-payment-time-24">
+                      24期
+                    </label>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+
+            <!-- 行動支付 -->
+            <div class="form-check mb-8">
+              <input class="form-check-input" type="radio" name="PaymentRadio" id="mobile-payment" checked>
+              <label class="form-check-label Body2-md" for="mobile-payment">
+                行動支付
+              </label>
+
+              <div class="mobile-payment-section">
+                <div class="mobile-payment-section-item">  
+                  <div class="mobile-payment-option">
+                    <input type="radio" name="mobile-payment" id="mobile-payment-1" checked>
+                    <label for="mobile-payment-1" class="mobile-payment-label">
+                      <div class="mobile-payment-info">
+                        <div class="mobile-payment-name h-md-6">臺灣Pay</div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="mobile-payment-option">
+                    <input type="radio" name="mobile-payment" id="mobile-payment-2">
+                    <label for="mobile-payment-2" class="mobile-payment-label">
+                      <div class="mobile-payment-info">
+                        <div class="mobile-payment-name h-md-6">Line Pay</div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="mobile-payment-option">
+                    <input type="radio" name="mobile-payment" id="mobile-payment-3">
+                    <label for="mobile-payment-3" class="mobile-payment-label">
+                      <div class="mobile-payment-info">
+                        <div class="mobile-payment-name h-md-6">Apple Pay</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- 銀聯卡 -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="PaymentRadio" id="donation-receipt" checked>
+              <label class="form-check-label Body2-md" for="donation-receipt">
+                銀聯卡
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 發票資訊 -->
+      <section class="billing-receipt-infor">
+        <div class="row justify-content-between">
+          <div class="col-2">
+            <div>
+              <p class="h-md-5 mb-16">發票資訊</p>
+            </div>
+          </div>
+        
+          <div class="col-10"></div>
+
+            <!-- 會員載具 -->
+          <div class="col-1"></div>
+
+          <div class="col-11">
+            <div class="form-check mb-8">
+              <input class="form-check-input" type="radio" name="ReceiptRadio" id="member-carrier">
+              <label class="form-check-label Body2-md" for="member-carrier">
+                會員載具
+              </label>
+            </div>
+
+            <!-- 手機載具 -->
+            <div class="form-check mb-8">
+              <input class="form-check-input" type="radio" name="ReceiptRadio" id="mobile-carrier" checked>
+              <label class="form-check-label Body2-md mb-4" for="mobile-carrier">
+                手機載具
+              </label>
+
+              <div class="mobile-carrier-section">
+                <label for="mobile-carrier-infor" class="form-label mobile-carrier-disable"></label>
+                <input type="text" class="mobile-carrier-input form-control mb-8" id="mobile-carrier-infor" placeholder="ex: /jsijwojd">
+              </div>
+            </div>
+
+            <!-- 公司發票 -->
+            <div class="form-check mb-8">
+              <input class="form-check-input" type="radio" name="ReceiptRadio" id="company-receipt" checked>
+              <label class="form-check-label Body2-md" for="company-receipt">
+                公司發票
+              </label>
+            </div>
+
+            <!-- 捐贈發票 -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="ReceiptRadio" id="donation-receipt" checked>
+              <label class="form-check-label Body2-md" for="donation-receipt">
+                捐贈發票
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 結帳金額 -->
+      <section>
+        <div class="billing-total-pay h-md-4">
+          <p class="mb-0">結帳金額</p>
+          <p class="mb-0">$1,053</p>
+          <button class="btn btn-primary mt-4" type="button"><p class="h-md-4 mb-0">確認結帳</p></button>
+        </div>
+      </section>
+
+  </div>
+</div>
