@@ -1,3 +1,5 @@
+
+
 // 導覽列 / 結帳資訊
 .billing-infor{
     padding-top: 4px;
@@ -224,7 +226,14 @@
     border-top: 1px solid #E5E5E5;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+}
+
+
+// 排版
+.billing-container{
+    padding-left: 12px;
+    padding-right: 12px;
 }
