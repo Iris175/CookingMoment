@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/CookingMoment/favicon.ico" />
     <title>結帳流程頁面</title>
-    <script type="module" crossorigin src="/CookingMoment/assets/main-B9KXLYFQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/CookingMoment/assets/main-j2gdvUQr.css">
+    <script type="module" crossorigin src="/CookingMoment/assets/main-C53ovr-w.js"></script>
+    <link rel="stylesheet" crossorigin href="/CookingMoment/assets/main-B0ZadHIT.css">
   </head>
   <body>
     <!-- header -->
@@ -303,8 +303,8 @@
           </button>
 
           <!-- 安全碼 -->
-          <label for="mobile-carrier-infor" class="form-label">安全碼</label>
-          <input type="text" class="mobile-carrier-input form-control mb-20" id="mobile-carrier-infor" placeholder="CVC">
+          <label for="credit-security-code-infor" class="form-label">安全碼</label>
+          <input type="text" class="form-check-infor-input form-control mb-20" id="credit-security-code-infor" placeholder="CVC">
         </div>          
       </div>
 
@@ -355,8 +355,8 @@
           </button>
 
           <!-- 安全碼 -->
-          <label for="mobile-carrier-infor" class="form-label">安全碼</label>
-          <input type="text" class="mobile-carrier-input form-control mb-md-8 mb-10" id="mobile-carrier-infor" placeholder="CVC">
+          <label for="credit-security-code-infor" class="form-label">安全碼</label>
+          <input type="text" class="form-check-infor-input form-control mb-md-8 mb-10" id="credit-security-code-infor" placeholder="CVC">
 
           <!-- 分期 -->
           <div class="revolving-payment-time d-flex mb-md-20">
@@ -460,31 +460,41 @@
 
       <!-- 手機載具 -->
       <div class="form-check mb-8">
-        <input class="form-check-input" type="radio" name="ReceiptRadio" id="mobile-carrier" checked>
-        <label class="form-check-label Body2 Body2-md mb-4 " for="mobile-carrier">
+        <input class="form-check-input" type="radio" name="ReceiptRadio" id="form-check-infor" checked>
+        <label class="form-check-label Body2 Body2-md mb-4" for="form-check-infor">
           手機載具
         </label>
 
-        <div class="mobile-carrier-section">
-          <label for="mobile-carrier-infor" class="form-label mobile-carrier-disable"></label>
-          <input type="text" class="mobile-carrier-input form-control mb-md-8 mb-10" id="mobile-carrier-infor" placeholder="ex: /jsijwojd">
+        <div class="form-check-infor-section">
+          <label for="mobile-carrier-infor" class="form-label form-check-infor-disable"></label>
+          <input type="text" class="form-check-infor-input form-control mb-md-8 mb-10" id="mobile-carrier-infor" placeholder="ex: /jsijwoj">
         </div>
       </div>
 
       <!-- 公司發票 -->
       <div class="form-check mb-8">
-        <input class="form-check-input" type="radio" name="ReceiptRadio" id="company-receipt" checked>
-        <label class="form-check-label Body2 Body2-md" for="company-receipt">
+        <input class="form-check-input" type="radio" name="ReceiptRadio" id="form-check-infor" checked>
+        <label class="form-check-label Body2 Body2-md mb-4" for="form-check-infor">
           公司發票
         </label>
+
+        <div class="form-check-infor-section">
+          <label for="company-receipt-infor" class="form-label form-check-infor-disable"></label>
+          <input type="number" class="form-check-infor-input form-control mb-md-8 mb-10" id="company-receipt-infor" placeholder="請輸入統一編號 ex: 03799401">
+        </div>
       </div>
 
       <!-- 捐贈發票 -->
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="ReceiptRadio" id="donation-receipt" checked>
-        <label class="form-check-label Body2 Body2-md" for="donation-receipt">
+        <input class="form-check-input" type="radio" name="ReceiptRadio" id="form-check-infor" checked>
+        <label class="form-check-label Body2 Body2-md mb-4" for="form-check-infor">
           捐贈發票
         </label>
+
+        <div class="form-check-infor-section">
+          <label for="donation-receipt-infor" class="form-label form-check-infor-disable"></label>
+          <input type="text" class="form-check-infor-input form-control mb-md-8 mb-10" id="donation-receipt-infor" placeholder="">
+        </div>
       </div>
     </div>
   </section>
